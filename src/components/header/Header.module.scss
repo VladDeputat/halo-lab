@@ -1,3 +1,61 @@
 header {
+  width: 100%;
   max-width: 1280px;
+  height: 112px;
+  border-bottom: 4px solid #222433;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+nav {
+  max-width: 500px;
+  ul {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navLink {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 100ms linear;
+  display: flex;
+
+  justify-content: center;
+}
+
+.navLink:active,
+.navLink:hover {
+  font-weight: 700;
+}
+
+.logo {
+  width: 111.16px;
+  height: 37.06px;
+  cursor: pointer;
+}
+
+.applyBtn {
+  width: 145px;
+  height: 48px;
+  background: #ffffff;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+
+.applyBtn:hover {
+  box-shadow: 0px 3px 10px 6px rgba(206, 206, 206, 1);
 }

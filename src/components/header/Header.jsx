@@ -1,18 +1,25 @@
 import React from "react";
+import styles from "./Header.module.scss";
+import logo from "../../assets/Logo.png";
 
 const Header = () => {
   return (
     <header>
-      <img src="../../assets/Logo.png" alt="logo" />
+      <a href="index.html">
+        <img className={styles.logo} src={logo} alt="logo" />
+      </a>
+
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Our mission</li>
-          <li>Places</li>
-          <li>Team</li>
+          <li className={styles.navLink}>Home</li>
+          <li className={styles.navLink}>Our mission</li>
+          <li className={styles.navLink}>Places</li>
+          <li className={styles.navLink}>Team</li>
         </ul>
       </nav>
-      <a href="#login"></a>
+      <button type="button" className={styles.applyBtn}>
+        Apply
+      </button>
     </header>
   );
 };

@@ -1,0 +1,119 @@
+.hero {
+  background-color: #f7f3f4;
+  display: block;
+  width: 100%;
+}
+
+.heroContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 180px 112px 68px 160px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.inputContainer {
+  margin-top: 60px;
+  width: 448px;
+  position: relative;
+
+  input {
+    margin-top: 48px;
+    width: 100%;
+    height: 64px;
+    background: #ffffff;
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    border-radius: 40px;
+    padding-left: 48px;
+    padding-right: 140px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #807c7c;
+  }
+
+  label {
+    position: relative;
+  }
+
+  label:before {
+    content: "";
+    position: absolute;
+    left: 21px;
+    top: 0;
+    width: 14px;
+    height: 20px;
+    background: url("../../assets//icons/location.svg");
+  }
+
+  button {
+    width: 122px;
+    height: 48px;
+    background: #f2726c;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: none;
+    transition: all 150ms linear;
+    cursor: pointer;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    &:hover {
+      box-shadow: 0px 3px 10px 6px rgba(206, 206, 206, 1);
+    }
+  }
+}
+
+.membersCount {
+  position: relative;
+  bottom: 85px;
+  right: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #ffffff;
+
+  & p:nth-child(2) {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+.membersCount:before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  width: 48px;
+  height: 58px;
+  background: url("../../assets//icons/headIcon.svg");
+  background-repeat: no-repeat;
+}
+
+.headlineImg {
+  width: 542.72px;
+  height: 292.74px;
+  margin-top: 60px;
+}
+.parrotImg {
+  width: 458.44px;
+  height: 565px;
+}
+
+.membersCountImg {
+  width: 272px;
+  height: 320px;
+  position: absolute;
+  bottom: 125px;
+  right: 353px;
+}
