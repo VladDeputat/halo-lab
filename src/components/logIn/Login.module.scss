@@ -1,0 +1,111 @@
+.sectionContainer {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffbd9e;
+  border-radius: 20px;
+  padding: 104px 104px 104px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.getStartedHeading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #222433;
+  width: 389px;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.getStartedText {
+  font-size: 18px;
+  line-height: 1.78;
+  color: #1e1a20;
+  opacity: 0.9;
+  width: 389px;
+}
+
+.loginContainer {
+  padding: 40px 55px;
+  background: #f7f3f4;
+  border-radius: 16px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: -20px;
+    width: 60px;
+    height: 55px;
+    background: url("../../assets/contact/leaf1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    height: 48px;
+    background: #ffffff;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #807c7c;
+    padding: 12px 24px;
+  }
+
+  button {
+    width: 312px;
+    height: 48px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #f2726c;
+    color: #ffffff;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 150ms linear;
+
+    &:hover {
+      box-shadow: 0px 3px 10px 6px rgba(206, 206, 206, 1);
+    }
+  }
+}
+
+.formHeading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.75;
+  text-transform: capitalize;
+  text-align: center;
+  color: #222433;
+  margin-bottom: 24px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: -75px;
+    top: 12px;
+    width: 40px;
+    height: 21px;
+    background: url("../../assets/contact/leaf2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

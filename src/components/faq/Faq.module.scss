@@ -1,0 +1,50 @@
+.faqContainer {
+  max-width: 1120px;
+  width: 100%;
+  padding: 192px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #222433;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.78;
+  color: #1e1a20;
+  opacity: 0.9;
+  width: 423px;
+  margin-bottom: 56px;
+}
+
+.contactUsBtn {
+  width: 166px;
+  height: 48px;
+  background: #f2726c;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms linear;
+  cursor: pointer;
+}
+
+.contactUsBtn:hover {
+  box-shadow: 0px 3px 10px 6px rgba(206, 206, 206, 1);
+}
