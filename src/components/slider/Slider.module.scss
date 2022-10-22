@@ -1,0 +1,52 @@
+.sliderSection {
+  background: #ffbd9e;
+}
+
+.sliderContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 114px 0 104px 0;
+}
+
+.slide {
+  height: 290px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  // img {
+  //   margin: 0 15px;
+  // }
+}
+
+.btnBox {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1.33px;
+  color: #000000;
+  margin-top: 30px;
+
+  p {
+    margin: 0 40px;
+  }
+
+  span {
+    opacity: 0.3;
+  }
+
+  button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

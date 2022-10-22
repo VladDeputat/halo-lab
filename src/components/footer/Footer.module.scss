@@ -1,0 +1,45 @@
+footer {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 96px 183px 88px 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.41;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+.subHeading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #333333;
+  margin-bottom: 37px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.85;
+  letter-spacing: 0.3px;
+  color: #333333;
+}
+
+.iconBox {
+  display: flex;
+
+  a {
+    cursor: pointer;
+  }
+
+  a:not(:last-child) {
+    margin-right: 16px;
+  }
+}

@@ -5,12 +5,16 @@ header {
   border-bottom: 4px solid #222433;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: rgba(247, 243, 244, 0.8);
   display: flex;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  transition: all 100ms linear;
+}
+.hide {
+  transform: translate(-50%, -100%);
 }
 
 nav {
