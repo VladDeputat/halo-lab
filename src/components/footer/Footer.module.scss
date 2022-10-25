@@ -1,35 +1,62 @@
 footer {
   width: 100%;
-  max-width: 1120px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 96px 183px 88px 160px;
   display: flex;
+  padding: 43px 37px 42px 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  div:first-child {
+    margin-bottom: 33px;
+    p {
+      max-width: 100%;
+      @media screen and (min-width: 766px) {
+        max-width: 160px;
+      }
+    }
+  }
+  @media screen and (min-width: 766px) {
+    padding: 96px 183px 88px 160px;
+  }
 }
 
 .heading {
   font-weight: 700;
-  font-size: 34px;
-  line-height: 1.41;
+  font-size: 28px;
+  line-height: 1.71;
   text-transform: uppercase;
   color: #333333;
-  margin-bottom: 32px;
+  @media screen and (min-width: 766px) {
+    font-size: 34px;
+    line-height: 1.41;
+    margin-bottom: 32px;
+  }
 }
 
 .subHeading {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.78;
   letter-spacing: 0.3px;
   color: #333333;
-  margin-bottom: 37px;
+  margin-bottom: 19px;
+  @media screen and (min-width: 766px) {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 9px;
+    margin-bottom: 37px;
+  }
 }
 
 p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.85;
   letter-spacing: 0.3px;
   color: #333333;
+  @media screen and (min-width: 766px) {
+    font-size: 13px;
+  }
 }
 
 .iconBox {

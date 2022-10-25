@@ -1,0 +1,73 @@
+.menu {
+  width: 100vw;
+  height: calc(100vh - 107px);
+  position: absolute;
+  z-index: 10;
+  background: rgb(12, 17, 60);
+  transition: all 350ms linear;
+  background-color: #f7f3f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // opacity: 0;
+  top: -100vh;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.menuOpen {
+  top: 107px;
+  // top: -100%;
+  // bottom: calc(-100vh + 100px);
+  opacity: 1;
+}
+
+.mobMenuNav {
+  height: 46%;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  li {
+    width: 100%;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #000000;
+    opacity: 0.8;
+    transition: all 150ms linear;
+    cursor: pointer;
+    text-align: center;
+
+    &:active,
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.applyBtn {
+  display: block;
+  margin: 0 auto;
+  width: 145px;
+  height: 48px;
+  background: #ffffff;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  transition: all 150ms linear;
+  cursor: pointer;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.applyBtn:hover {
+  box-shadow: 0px 3px 10px 6px rgba(206, 206, 206, 1);
+}

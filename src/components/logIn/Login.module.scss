@@ -4,46 +4,74 @@
   margin: 0 auto;
   background: #ffbd9e;
   border-radius: 20px;
-  padding: 104px 104px 104px 80px;
+  padding: 42px 18px 56px 18px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  div {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 766px) {
+    padding: 104px 42px 104px 18px;
+  }
 }
 
 .getStartedHeading {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.4;
+  font-size: 28px;
+  line-height: 1.5;
   text-transform: capitalize;
   color: #222433;
-  width: 389px;
-  margin-top: 64px;
+  max-width: 389px;
   margin-bottom: 40px;
+  text-align: center;
+  @media screen and (min-width: 766px) {
+    font-size: 40px;
+    line-height: 1.4;
+  }
 }
 
 .getStartedText {
-  font-size: 18px;
-  line-height: 1.78;
+  font-size: 15px;
+  line-height: 1.75;
   color: #1e1a20;
   opacity: 0.9;
-  width: 389px;
+  max-width: 389px;
+  margin-bottom: 55px;
+  text-align: center;
+  @media screen and (min-width: 766px) {
+    font-size: 18px;
+    line-height: 1.78;
+  }
 }
 
 .loginContainer {
-  padding: 40px 55px;
+  padding: 40px 24px;
   background: #f7f3f4;
   border-radius: 16px;
   position: relative;
+  width: 100%;
+  max-width: 442px;
+  @media screen and (min-width: 766px) {
+    width: 90%;
+    padding: 40px 55px;
+  }
 
   &:before {
     content: "";
     position: absolute;
     right: -18px;
     top: -20px;
-    width: 60px;
-    height: 55px;
+    width: 47px;
+    height: 43px;
     background: url("../../assets/contact/leaf1.png");
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (min-width: 766px) {
+      width: 60px;
+      height: 55px;
+    }
   }
 
   form {
@@ -65,7 +93,6 @@
   }
 
   button {
-    width: 312px;
     height: 48px;
     border-radius: 30px;
     border: none;
@@ -88,24 +115,34 @@
 }
 
 .formHeading {
+  font-size: 24px;
+  line-height: 1.33;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 1.75;
   text-transform: capitalize;
   text-align: center;
   color: #222433;
   margin-bottom: 24px;
   position: relative;
+  @media screen and (min-width: 766px) {
+    font-size: 32px;
+    line-height: 1.75;
+  }
 
   &:before {
     content: "";
     position: absolute;
-    right: -75px;
-    top: 12px;
-    width: 40px;
-    height: 21px;
+    right: -35px;
+    top: -8px;
+    width: 31px;
+    height: 16px;
     background: url("../../assets/contact/leaf2.png");
     background-repeat: no-repeat;
     background-size: contain;
+    @media screen and (min-width: 766px) {
+      width: 40px;
+      height: 21px;
+      right: -75px;
+      top: 18px;
+    }
   }
 }

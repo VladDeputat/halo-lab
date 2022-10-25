@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import headline from "../../assets/hero/headline.png";
-import parrot from "../../assets/hero/parrot.png";
-import membersCount from "../../assets/hero/members-count.png";
+import headIcon from "../../assets/icons/headIcon.svg";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.heroContainer}>
-        <div>
+        <div className={styles.headlineContainer}>
           <img className={styles.headlineImg} src={headline} alt="headline" />
           <div className={styles.inputContainer}>
             <p>
@@ -24,16 +23,11 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.membersCountContainer}>
-          <img className={styles.parrotImg} src={parrot} alt="parrot" />
-          <div className={styles.membersCountContainer}>
-            <img
-              className={styles.membersCountImg}
-              src={membersCount}
-              alt="members-count"
-            />
-            <div className={styles.membersCount}>
+          <div className={styles.membersCount}>
+            <img src={headIcon} alt="headIcon" />
+            <div>
               <p>Members</p>
-              <p>232</p>
+              <p>29 181</p>
             </div>
           </div>
         </div>

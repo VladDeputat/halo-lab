@@ -9,9 +9,9 @@ const Footer = () => {
     <footer>
       <div>
         <h3 className={styles.heading}>Contacts</h3>
-        <p>2022 Rootz Foundation.</p>
-        <p>All rights reserved</p>
+        <p>2022 Rootz Foundation. All rights reserved</p>
       </div>
+
       <div>
         <h6 className={styles.subHeading}>Headquarters</h6>
         <p>1234 Taliban</p>

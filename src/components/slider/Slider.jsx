@@ -9,6 +9,8 @@ const SliderComponent = () => {
   const [curSlide, setcurSlide] = useState(2);
   const sliderRef = useRef();
 
+  console.log(window.innerWidth);
+
   const gotoNext = () => {
     sliderRef.current.slickNext();
   };
@@ -16,16 +18,19 @@ const SliderComponent = () => {
     sliderRef.current.slickPrev();
   };
 
+  console.log(window.innerWidth < 768 ? 1 : 3);
+
   const settings = {
     centerMode: true,
     infinite: true,
-    centerPadding: "180px",
+    centerPadding: window.innerWidth < 1024 ? 0 : "180px",
+
     dots: false,
-    speed: 1000,
-    slidesToShow: 3,
+    speed: 2000,
+    slidesToShow: window.innerWidth < 768 ? 1 : 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     arrows: false,
     pauseOnHover: false,
     initialSlide: 2,

@@ -2,71 +2,151 @@
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 192px 0 193px 0;
+  padding: 100px 0 110px 0;
+  @media screen and (min-width: 455px) {
+    padding: 130px 0 100px 0;
+  }
+  @media screen and (min-width: 1120px) {
+    padding: 192px 0 193px 0;
+  }
 }
 
 .heading {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.4;
+  font-size: 28px;
+  line-height: 1.5;
   text-align: center;
   text-transform: capitalize;
   color: #222433;
+  @media screen and (min-width: 766px) {
+    font-size: 40px;
+    line-height: 1.4;
+  }
 }
 
 .description {
   width: 352px;
-  font-size: 18px;
-  line-height: 1.78;
+  font-size: 15px;
+  line-height: 1.75;
   text-align: center;
   color: #1e1a20;
   opacity: 0.9;
   margin: 0 auto 13px auto;
+  @media screen and (min-width: 766px) {
+    font-size: 18px;
+    line-height: 1.78;
+  }
 }
 
 .teamMateList {
   display: flex;
+  flex-direction: column;
   position: relative;
+  padding: 0 10px;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+
+  @media screen and (min-width: 1120px) {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .teamMateListItem {
-  height: 367px;
-  //   z-index: 1;
+  width: 100%;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1120px) {
+    margin-bottom: 0;
+    height: 367px;
+  }
 }
 .teamMateListItem:nth-child(2) {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 69px;
+  margin-left: 0;
+  @media screen and (min-width: 1120px) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 69px;
+  }
 }
 .teamMateListItem:nth-child(3) {
-  margin-left: 118px;
+  margin: 0;
+  @media screen and (min-width: 1120px) {
+    margin-left: 118px;
+  }
 }
+
 .teamMateImg1 {
-  width: 323px;
-  height: 274px;
+  width: 200px;
+  @media screen and (min-width: 455px) {
+    width: 261px;
+  }
+  @media screen and (min-width: 766px) {
+    min-width: 323px;
+  }
 }
 .teamMateImg2 {
-  width: 334px;
-  height: 263px;
+  width: 208px;
+  margin-left: auto;
+  @media screen and (min-width: 455px) {
+    width: 271px;
+  }
+  @media screen and (min-width: 766px) {
+    min-width: 334px;
+  }
 }
 .teamMateImg3 {
-  width: 276px;
-  height: 312px;
+  width: 171px;
+  @media screen and (min-width: 455px) {
+    width: 223px;
+  }
+  @media screen and (min-width: 766px) {
+    min-width: 276px;
+  }
 }
 
 .vectorLine {
+  width: 234.56px;
   position: absolute;
-  opacity: 0.6;
   z-index: -1;
+  @media screen and (min-width: 766px) {
+    width: 378px;
+  }
 }
 
 .vectorLine1 {
-  top: 20px;
-  left: 160px;
+  top: 100px;
+  right: 20px;
+  transform: rotate(30deg);
+  @media screen and (min-width: 455px) {
+    top: 120px;
+    right: 130px;
+  }
+  @media screen and (min-width: 766px) {
+    left: 180px;
+  }
+  @media screen and (min-width: 1120px) {
+    transform: rotate(0deg);
+    top: 20px;
+  }
 }
 
 .vectorLine2 {
-  bottom: 52px;
-  right: 103px;
-  transform: scale(1, -1);
+  bottom: 150px;
+  left: 65px;
+  transform: rotate(-90deg);
+  @media screen and (min-width: 455px) {
+    bottom: 190px;
+    left: 160px;
+    transform: rotate(-60deg);
+  }
+  @media screen and (min-width: 766px) {
+    left: 180px;
+  }
+  @media screen and (min-width: 1120px) {
+    left: 620px;
+    bottom: 50px;
+    transform: scale(1, -1);
+  }
 }

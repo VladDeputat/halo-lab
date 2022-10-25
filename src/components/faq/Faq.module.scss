@@ -1,28 +1,44 @@
 .faqContainer {
-  max-width: 1120px;
+  max-width: 1140px;
   width: 100%;
-  padding: 192px 0;
+  padding: 100px 18px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  // align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 766px) {
+    padding: 192px 10px;
+    justify-content: space-between;
+  }
 }
 
 .heading {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.4;
+  font-size: 28px;
+  line-height: 1.5;
   text-transform: capitalize;
   color: #222433;
   margin-bottom: 40px;
+  @media screen and (min-width: 766px) {
+    font-size: 40px;
+    line-height: 1.4;
+  }
 }
 
 .description {
-  font-size: 18px;
-  line-height: 1.78;
+  font-size: 15px;
+  line-height: 1.75;
   color: #1e1a20;
   opacity: 0.9;
-  width: 423px;
-  margin-bottom: 56px;
+  width: 100%;
+  margin-bottom: 32px;
+  @media screen and (min-width: 766px) {
+    margin-bottom: 56px;
+    font-size: 18px;
+    line-height: 1.78;
+    width: 423px;
+  }
 }
 
 .contactUsBtn {

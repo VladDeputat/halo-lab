@@ -15,7 +15,6 @@ const LogIn = () => {
         </div>
         <div className={styles.loginContainer}>
           <h4 className={styles.formHeading}>Log in</h4>
-
           <form className={styles}>
             <input
               className={styles}
