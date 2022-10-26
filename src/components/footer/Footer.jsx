@@ -6,7 +6,7 @@ import liIcon from "../../assets/icons/linkedIn.svg";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="places">
       <div>
         <h3 className={styles.heading}>Contacts</h3>
         <p>2022 Rootz Foundation. All rights reserved</p>

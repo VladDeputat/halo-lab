@@ -1,9 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Login.module.scss";
 
 const LogIn = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name === "" || email === "") {
+      return;
+    } else {
+      alert(`You've booked a demo for ${name} with email:${email}`);
+      setName("");
+      setEmail("");
+    }
+  };
   return (
-    <section>
+    <section id="apply">
       <div className={styles.sectionContainer}>
         <div>
           <h3 className={styles.getStartedHeading}>Get started today!</h3>
@@ -15,22 +28,24 @@ const LogIn = () => {
         </div>
         <div className={styles.loginContainer}>
           <h4 className={styles.formHeading}>Log in</h4>
-          <form className={styles}>
+          <form>
             <input
-              className={styles}
+              onChange={(e) => setName(e.target.value)}
+              value={name}
               autoComplete="off"
               name="name"
-              type="text"
+              type="name"
               placeholder="Name"
             />
             <input
-              className={styles}
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               autoComplete="off"
               name="email"
               type="email"
               placeholder="Email"
             />
-            <button className={styles} type="submit">
+            <button onClick={handleSubmit} type="submit">
               book a demo
             </button>
           </form>

@@ -50,6 +50,10 @@ header {
   transition: all 100ms linear;
   display: flex;
   justify-content: center;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
 }
 
 .navLink:active,
@@ -80,8 +84,12 @@ header {
   line-height: 140%;
   transition: all 150ms linear;
   cursor: pointer;
+  text-decoration: none;
+  color: #000000;
   @media screen and (min-width: 767px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

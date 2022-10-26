@@ -16,15 +16,23 @@ const Header = () => {
 
         <nav className={styles.headerNav}>
           <ul>
-            <li className={styles.navLink}>Home</li>
-            <li className={styles.navLink}>Our mission</li>
-            <li className={styles.navLink}>Places</li>
-            <li className={styles.navLink}>Team</li>
+            <li className={styles.navLink}>
+              <a href="#home">Home</a>
+            </li>
+            <li className={styles.navLink}>
+              <a href="#mission">Our mission</a>
+            </li>
+            <li className={styles.navLink}>
+              <a href="#places">Places</a>
+            </li>
+            <li className={styles.navLink}>
+              <a href="#team">Team</a>{" "}
+            </li>
           </ul>
         </nav>
-        <button type="button" className={styles.applyBtn}>
+        <a className={styles.applyBtn} href="#apply">
           Apply
-        </button>
+        </a>
 
         <BurgerBtn menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>

@@ -4,10 +4,9 @@
   padding: 100px 18px;
   margin: 0 auto;
   display: flex;
-  // align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  @media screen and (min-width: 766px) {
+  @media screen and (min-width: 1000px) {
     padding: 192px 10px;
     justify-content: space-between;
   }
@@ -53,6 +52,7 @@
   line-height: 1.4;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   display: flex;
   align-items: center;

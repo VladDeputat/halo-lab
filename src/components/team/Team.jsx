@@ -7,7 +7,7 @@ import lineVector from "../../assets/team/vector.png";
 
 const Team = () => {
   return (
-    <section>
+    <section id="team">
       <div className={styles.teamContainer}>
         <h3 className={styles.heading}>Our top team</h3>
         <p className={styles.description}>

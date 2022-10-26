@@ -13,9 +13,13 @@ const faq = () => {
             When pattern is mentioned in interior design, it is easy to asso- ciate it
             with a geometric patterned wallpaper or colourful prints on interior fabrics.
           </p>
-          <button className={styles.contactUsBtn} type="button">
+          <a
+            className={styles.contactUsBtn}
+            href="https://www.halo-lab.com/"
+            target="blank"
+          >
             Contact us
-          </button>
+          </a>
         </div>
         <div>
           <ul>

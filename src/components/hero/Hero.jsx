@@ -1,11 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Hero.module.scss";
 import headline from "../../assets/hero/headline.png";
 import headIcon from "../../assets/icons/headIcon.svg";
 
 const Hero = () => {
+  const [query, setQuery] = useState("");
+  const [count, setCount] = useState(29181);
+
+  const onClick = () => {
+    if (query === "") {
+      return;
+    } else {
+      window.open(`https://www.google.com.ua/maps/place/${query}`, "_blank").focus();
+      setCount(count + 1);
+      setQuery("");
+    }
+  };
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <div className={styles.heroContainer}>
         <div className={styles.headlineContainer}>
           <img className={styles.headlineImg} src={headline} alt="headline" />
@@ -15,9 +27,14 @@ const Hero = () => {
               all do something.
             </p>
             <label>
-              <input type="text" placeholder="Find the place to help" />
+              <input
+                onChange={(e) => setQuery(e.target.value)}
+                value={query}
+                type="text"
+                placeholder="Find the place to help"
+              />
             </label>
-            <button className={styles.searchBtn} type="submit">
+            <button onClick={onClick} className={styles.searchBtn} type="submit">
               Search
             </button>
           </div>
@@ -27,7 +44,7 @@ const Hero = () => {
             <img src={headIcon} alt="headIcon" />
             <div>
               <p>Members</p>
-              <p>29 181</p>
+              <p>{count}</p>
             </div>
           </div>
         </div>

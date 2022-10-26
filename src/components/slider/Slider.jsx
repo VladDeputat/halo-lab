@@ -37,7 +37,7 @@ const SliderComponent = () => {
     afterChange: (i) => setcurSlide(i),
   };
   return (
-    <section className={styles.sliderSection}>
+    <section className={styles.sliderSection} id="mission">
       <div className={styles.sliderContainer}>
         <Slider {...settings} className={styles.slider} ref={sliderRef}>
           {data.map((slide) => (
