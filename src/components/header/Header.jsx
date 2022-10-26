@@ -1,6 +1,9 @@
 import React, {useState} from "react";
 import styles from "./Header.module.scss";
-import logo from "../../assets/Logo.png";
+import logoRootz from "../../assets/logo/rootz.svg";
+import leaf1 from "../../assets/logo/leaf1.svg";
+import leaf2 from "../../assets/logo/leaf2.svg";
+import leaf3 from "../../assets/logo/leaf3.svg";
 import BurgerBtn from "./burgerBtn/BurgerBtn";
 import MobileMenu from "./mobileMenu/MobileMenu";
 
@@ -10,9 +13,17 @@ const Header = () => {
   return (
     <header>
       <div className={styles.headerContainer}>
-        <a href="index.html">
-          <img className={styles.logo} src={logo} alt="logo" />
-        </a>
+        <div className={styles.logoContainer}>
+          <a href="index.html">
+            <span>
+              <img className={styles.logoLeaf} src={leaf1} alt="leaf1" />
+              <img className={styles.logoLeaf} src={leaf2} alt="leaf2" />
+              <img className={styles.logoLeaf} src={leaf3} alt="leaf3" />
+            </span>
+
+            <img className={styles.logo} src={logoRootz} alt="logo" />
+          </a>
+        </div>
 
         <nav className={styles.headerNav}>
           <ul>

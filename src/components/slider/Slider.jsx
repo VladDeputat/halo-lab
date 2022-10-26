@@ -9,16 +9,12 @@ const SliderComponent = () => {
   const [curSlide, setcurSlide] = useState(2);
   const sliderRef = useRef();
 
-  console.log(window.innerWidth);
-
   const gotoNext = () => {
     sliderRef.current.slickNext();
   };
   const gotoPrev = () => {
     sliderRef.current.slickPrev();
   };
-
-  console.log(window.innerWidth < 768 ? 1 : 3);
 
   const settings = {
     centerMode: true,
