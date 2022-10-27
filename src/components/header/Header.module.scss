@@ -65,6 +65,7 @@ header {
   width: 111px;
   height: 33px;
   position: relative;
+  margin-top: 43px;
 
   a {
     width: 100%;
@@ -106,17 +107,15 @@ header {
       }
     }
   }
+
+  @media screen and (min-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 .logo {
   width: 60.47px;
   height: 16.75px;
-  // margin-left: auto;
-  // margin-top: 43px;
-  // top: 30px;
-  @media screen and (min-width: 767px) {
-    margin-top: 0;
-  }
 }
 
 .applyBtn {
